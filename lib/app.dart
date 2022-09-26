@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:steady_calendar/screens/cal_pager/cal_pager.dart';
 
 import 'package:steady_calendar/screens/intro/Intro.dart';
+import 'package:steady_calendar/screens/login_options/login_options.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -13,8 +15,8 @@ class App extends StatelessWidget {
       routes: {
         //   Splash.routeName: (context) => const Splash(),
         Intro.routeName: (context) => const Intro(),
-        //   LoginOptions.routeName: (context) => const LoginOptions(),
-        //   CalPager.routeName: (context) => const CalPager(),
+        LoginOptions.routeName: (context) => const LoginOptions(),
+        CalPager.routeName: (context) => const CalPager(),
       },
     );
   }
